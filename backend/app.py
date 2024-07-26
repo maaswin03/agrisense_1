@@ -11,7 +11,6 @@ import cv2
 from pathlib import Path
 from ultralytics import YOLO
 
-# Load YOLO model
 model = YOLO('yolov8n.pt')
 
 dataset_dir = Path("animals")
@@ -22,13 +21,13 @@ CORS(app)
 bcrypt = Bcrypt(app)
 app.secret_key = 'agirsenseisthebest'
 
-num_classes = 10  # Assuming you have 10 classes (types of plant diseases)
+num_classes = 10
 model = models.resnet18(pretrained=True)
 model.fc = torch.nn.Linear(model.fc.in_features, num_classes)
 model.load_state_dict(torch.load('plant_disease_model_1_latest.pt', map_location=torch.device('cpu')))
 model.eval()
 
-MONGO_URI = "mongodb+srv://aswin2005:Aswin2005@project.rddo8i4.mongodb.net/?retryWrites=true&w=majority"
+MONGO_URI = ""
 client = MongoClient(MONGO_URI)
 db = client.get_database("PROJECT")
 collection = db.get_collection("Recieved_data")
