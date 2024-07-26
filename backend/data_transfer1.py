@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 
-MONGO_URI = "mongodb+srv://aswin2005:Aswin2005@project.rddo8i4.mongodb.net/?retryWrites=true&w=majority"
+MONGO_URI = ""
 client = MongoClient(MONGO_URI)
 db = client.get_database("PROJECT")
 collection = db.get_collection("Recieved_data")
