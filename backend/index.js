@@ -114,7 +114,7 @@ const port = 5100;
 app.use(cors());
 app.use(express.json());
 
-const uri = "mongodb+srv://aswin2005:Aswin2005@project.rddo8i4.mongodb.net/?retryWrites=true&w=majority&appName=PROJECT";
+const uri = "";
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
