@@ -2,7 +2,7 @@
 // const { GoogleGenerativeAI } = require("@google/generative-ai");
 // var cors = require("cors");
 
-// const genAI = new GoogleGenerativeAI("AIzaSyDxXD0Is4oj0TLsTz056ylvmFIT0UZcV0I");
+// const genAI = new GoogleGenerativeAI("");
 
 // const app = express();
 // const port = 5100;
@@ -106,7 +106,7 @@ const { MongoClient, ServerApiVersion } = require("mongodb");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const cors = require("cors");
 
-const genAI = new GoogleGenerativeAI("AIzaSyDxXD0Is4oj0TLsTz056ylvmFIT0UZcV0I");
+const genAI = new GoogleGenerativeAI("");
 
 const app = express();
 const port = 5100;
